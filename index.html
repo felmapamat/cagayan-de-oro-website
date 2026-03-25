@@ -1,10 +1,10 @@
-<!-- Chosen City/Municipality: Municipality of Lala, Lanao del Norte -->
+<!-- Chosen City: Baguio City, Benguet, Philippines -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Discover Lala, Lanao del Norte</title>
+<title>Discover Baguio City</title>
 
 <style>
 
@@ -17,13 +17,13 @@
 }
 
 body{
-  line-height:1.6;
   background:#f4f4f4;
+  line-height:1.6;
 }
 
 /* NAVBAR */
 .navbar{
-  background:#1e3799;
+  background:#0b5345;
   color:white;
   display:flex;
   justify-content:space-between;
@@ -47,7 +47,7 @@ body{
 }
 
 .menu a:hover{
-  color:#f6b93b;
+  color:#f7dc6f;
 }
 
 .hamburger{
@@ -58,7 +58,7 @@ body{
 
 /* HERO SECTION */
 .hero{
-  background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center center/cover;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/6/63/Burnham_Park_Baguio.jpg') no-repeat center center/cover;
   height:80vh;
   display:flex;
   align-items:center;
@@ -68,7 +68,7 @@ body{
 }
 
 .hero h1{
-  font-size:48px;
+  font-size:45px;
   background:rgba(0,0,0,0.5);
   padding:20px;
   border-radius:10px;
@@ -82,26 +82,26 @@ section{
   border-radius:10px;
 }
 
-section h2{
-  text-align:center;
-  margin-bottom:20px;
-  color:#1e3799;
-}
-
 .container{
   max-width:1100px;
   margin:auto;
 }
 
-/* TOURIST CARDS */
+section h2{
+  text-align:center;
+  color:#0b5345;
+  margin-bottom:20px;
+}
+
+/* TOURIST SPOTS */
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
 
 .card{
-  background:#fff;
+  background:white;
   border-radius:10px;
   overflow:hidden;
   box-shadow:0 4px 10px rgba(0,0,0,0.2);
@@ -115,7 +115,7 @@ section h2{
 
 .card h3{
   padding:15px;
-  color:#1e3799;
+  color:#0b5345;
 }
 
 .card p{
@@ -125,7 +125,7 @@ section h2{
 /* GALLERY */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:15px;
 }
 
@@ -140,42 +140,44 @@ section h2{
 }
 
 footer{
-  background:#1e3799;
+  background:#0b5345;
   color:white;
   text-align:center;
   padding:20px;
   margin-top:20px;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
 @media(max-width:768px){
-  .menu{
-    display:none;
-    flex-direction:column;
-    background:#1e3799;
-    position:absolute;
-    top:60px;
-    right:0;
-    width:200px;
-  }
 
-  .menu a{
-    padding:15px;
-    display:block;
-    border-top:1px solid rgba(255,255,255,0.2);
-  }
+.menu{
+  display:none;
+  flex-direction:column;
+  background:#0b5345;
+  position:absolute;
+  top:60px;
+  right:0;
+  width:200px;
+}
 
-  .menu.show{
-    display:flex;
-  }
+.menu a{
+  display:block;
+  padding:15px;
+  border-top:1px solid rgba(255,255,255,0.2);
+}
 
-  .hamburger{
-    display:block;
-  }
+.menu.show{
+  display:flex;
+}
 
-  .hero h1{
-    font-size:28px;
-  }
+.hamburger{
+  display:block;
+}
+
+.hero h1{
+  font-size:28px;
+}
+
 }
 
 </style>
@@ -185,7 +187,7 @@ footer{
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">Lala, LDN</div>
+  <div class="logo">Baguio City</div>
 
   <div class="menu" id="menu">
     <a href="#home">Home</a>
@@ -201,19 +203,19 @@ footer{
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <h1>Welcome to the Municipality of Lala<br>Lanao del Norte, Philippines</h1>
+  <h1>Welcome to Baguio City<br>The Summer Capital of the Philippines</h1>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
-    <h2>About the Municipality</h2>
+    <h2>About Baguio City</h2>
     <p>
-      Lala is a peaceful municipality located in the province of Lanao del Norte in the Philippines. It is known for its beautiful coastal areas, friendly residents, and growing local economy. The municipality is also rich in agriculture and is one of the important towns in the province.
+      Baguio City is known as the Summer Capital of the Philippines because of its cool weather and beautiful mountain scenery. It is located in the province of Benguet and is one of the most popular tourist destinations in the country.
     </p>
     <br>
     <p>
-      Many visitors enjoy the natural beauty of Lala, including its beaches, farms, and quiet environment. It is a great place for people who want to experience a simple and peaceful lifestyle away from busy cities.
+      The city is famous for its pine trees, parks, and tourist spots such as Burnham Park, Mines View Park, and Camp John Hay. Many visitors travel to Baguio every year to relax, enjoy the cool climate, and experience its culture.
     </p>
   </div>
 </section>
@@ -221,26 +223,26 @@ footer{
 <!-- TOURIST SPOTS -->
 <section id="tourist">
   <div class="container">
-    <h2>Tourist Spots</h2>
+    <h2>Famous Tourist Spots</h2>
 
     <div class="cards">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-        <h3>Beautiful Beaches</h3>
-        <p>Lala is known for its clean and relaxing beaches where visitors can enjoy swimming and peaceful views of the sea.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Burnham_Park_Baguio.jpg">
+        <h3>Burnham Park</h3>
+        <p>Burnham Park is the most famous park in Baguio City. Visitors can enjoy boating, biking, and relaxing in the cool weather.</p>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-        <h3>Nature and Farmlands</h3>
-        <p>The municipality has beautiful natural scenery including green farms, trees, and peaceful rural landscapes.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Mines_View_Park_Baguio.jpg">
+        <h3>Mines View Park</h3>
+        <p>Mines View Park offers a beautiful view of the mountains and is one of the most popular tourist destinations in the city.</p>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-        <h3>Local Community Areas</h3>
-        <p>Visitors can experience the friendly local community and simple lifestyle of the people in Lala.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Camp_John_Hay_Baguio.jpg">
+        <h3>Camp John Hay</h3>
+        <p>Camp John Hay is known for its pine trees, cool weather, and relaxing environment. It is perfect for nature lovers.</p>
       </div>
 
     </div>
@@ -250,13 +252,13 @@ footer{
 <!-- CULTURE -->
 <section id="culture">
   <div class="container">
-    <h2>Culture and Lifestyle</h2>
+    <h2>Culture and Festivals</h2>
     <p>
-      The people of Lala are known for being friendly and welcoming. The municipality celebrates local traditions, simple living, and strong community values. Agriculture and fishing are important parts of the lifestyle in Lala.
+      Baguio City celebrates the Panagbenga Festival every February. The festival is famous for its flower floats, street dancing, and colorful celebrations.
     </p>
     <br>
     <p>
-      Visitors can enjoy the peaceful environment, fresh air, and relaxing atmosphere that make Lala a unique and special place in Lanao del Norte.
+      The city is also known for fresh strawberries, local handicrafts, and friendly people. Visitors always enjoy the culture and traditions of Baguio City.
     </p>
   </div>
 </section>
@@ -267,10 +269,10 @@ footer{
     <h2>Gallery</h2>
 
     <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Burnham_Park_Baguio.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Mines_View_Park_Baguio.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Baguio_City.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Session_Road_Baguio.jpg">
     </div>
 
   </div>
@@ -280,15 +282,15 @@ footer{
 <section id="contact">
   <div class="container contact-box">
     <h2>Contact Information</h2>
-    <p>Email: lala.municipality@gmail.com</p>
+    <p>Email: baguio.city@gmail.com</p>
     <p>Phone: 09123456789</p>
-    <p>Address: Municipality of Lala, Lanao del Norte, Philippines</p>
+    <p>Address: Baguio City, Benguet, Philippines</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Municipality of Lala, Lanao del Norte | Student Project Website</p>
+  <p>© 2026 Discover Baguio City | Student Project Website</p>
 </footer>
 
 <!-- SCRIPT -->

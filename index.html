@@ -1,0 +1,302 @@
+<!-- Chosen City: Cagayan de Oro City -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Cagayan de Oro City</title>
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  line-height:1.6;
+  background:#f4f4f4;
+}
+
+/* NAVBAR */
+.navbar{
+  background:#0a3d62;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+
+.menu a:hover{
+  color:#f6b93b;
+}
+
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* HERO SECTION */
+.hero{
+  background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero h1{
+  font-size:48px;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+  background:white;
+  margin:20px;
+  border-radius:10px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#0a3d62;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+/* TOURIST CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:15px;
+  color:#0a3d62;
+}
+
+.card p{
+  padding:0 15px 15px 15px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* CONTACT */
+.contact-box{
+  text-align:center;
+}
+
+footer{
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu{
+    display:none;
+    flex-direction:column;
+    background:#0a3d62;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:200px;
+  }
+
+  .menu a{
+    padding:15px;
+    display:block;
+    border-top:1px solid rgba(255,255,255,0.2);
+  }
+
+  .menu.show{
+    display:flex;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">CDO City</div>
+
+  <div class="menu" id="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#tourist">Tourist Spots</a>
+    <a href="#culture">Culture</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Welcome to Cagayan de Oro City<br>The City of Golden Friendship</h1>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About the City</h2>
+    <p>
+      Cagayan de Oro City is one of the fastest-growing cities in Mindanao. It is known as the City of Golden Friendship because of the kindness and hospitality of its people. The city is located in the province of Misamis Oriental in the Philippines and is famous for tourism, business, and adventure activities.
+    </p>
+    <br>
+    <p>
+      The city is also known for its white-water rafting adventure, beautiful tourist spots, and exciting festivals. Many students, tourists, and visitors come to Cagayan de Oro every year because of its friendly environment and modern lifestyle.
+    </p>
+  </div>
+</section>
+
+<!-- TOURIST SPOTS -->
+<section id="tourist">
+  <div class="container">
+    <h2>Tourist Spots</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <h3>White Water Rafting</h3>
+        <p>One of the most popular tourist activities in Cagayan de Oro. Visitors from different places enjoy the exciting rafting adventure.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <h3>Mapawa Nature Park</h3>
+        <p>A beautiful nature park where you can enjoy hiking, waterfalls, and outdoor activities with friends and family.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+        <h3>Macahambus Cave</h3>
+        <p>A famous historical and natural attraction in the city known for its beautiful cave and hanging bridge.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section id="culture">
+  <div class="container">
+    <h2>Culture and Festival</h2>
+    <p>
+      Cagayan de Oro celebrates the Higalaay Festival every August. The festival is a celebration of friendship, culture, and unity. Many people enjoy street dancing, parades, and cultural performances during the festival.
+    </p>
+    <br>
+    <p>
+      The city is also known for its delicious food, friendly people, and rich culture. Visitors always feel welcome in the City of Golden Friendship.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-box">
+    <h2>Contact Information</h2>
+    <p>Email: cagayan.city@gmail.com</p>
+    <p>Phone: 09123456789</p>
+    <p>Address: Cagayan de Oro City, Misamis Oriental, Philippines</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Discover Cagayan de Oro City | Student Project Website</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

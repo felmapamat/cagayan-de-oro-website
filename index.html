@@ -9,6 +9,7 @@
 
 <style>
 
+/* RESET */
 *{
   margin:0;
   padding:0;
@@ -57,7 +58,7 @@ body{
 
 /* HERO */
 .hero{
-  background:url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Burnham_Park_Lagoon%2C_Baguio_City%2C_Philippines.jpg") center/cover no-repeat;
+  background:url("Images/Baguio City 1.jpg") center/cover no-repeat;
   height:80vh;
   display:flex;
   align-items:center;
@@ -133,6 +134,14 @@ section h2{
   border-radius:10px;
 }
 
+/* FOOTER */
+footer{
+  background:#0b5345;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
 /* MOBILE */
 @media(max-width:768px){
 
@@ -166,13 +175,6 @@ section h2{
 
 }
 
-footer{
-  background:#0b5345;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-
 </style>
 </head>
 
@@ -193,21 +195,80 @@ footer{
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="home">
   <h1>Welcome to Baguio City<br>The Summer Capital of the Philippines</h1>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <h2>About Baguio City</h2>
     <p>
-      Baguio City is known as the Summer Capital of the Philippines because of its cool weather and beautiful mountain scenery.
+      Baguio City is known as the Summer Capital of the Philippines because of its cool climate,
+      beautiful mountain scenery, and tourist attractions such as Burnham Park, Mines View Park,
+      and Camp John Hay. It is one of the most visited cities in the Philippines.
+    </p>
+  </div>
+</section>
+
+<!-- TOURIST SPOTS -->
+<section id="tourist">
+  <div class="container">
+    <h2>Famous Tourist Spots</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="Images/Baguio City 2.jpg">
+        <h3>Burnham Park</h3>
+        <p>Burnham Park is one of the most popular tourist attractions in Baguio City. Visitors can enjoy boating, biking, and relaxing in the park.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/Baguio City 3.jpg">
+        <h3>Mines View Park</h3>
+        <p>Mines View Park offers a beautiful mountain view and cool climate. It is one of the most visited places in Baguio.</p>
+      </div>
+
+      <div class="card">
+        <img src="Images/Baguio City 4.jpg">
+        <h3>Camp John Hay</h3>
+        <p>Camp John Hay is known for its pine trees, cool weather, and relaxing environment. It is a perfect place for tourists.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+      <img src="Images/Baguio City 1.jpg">
+      <img src="Images/Baguio City 2.jpg">
+      <img src="Images/Baguio City 3.jpg">
+      <img src="Images/Baguio City 4.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Information</h2>
+    <p style="text-align:center;">
+      Location: Baguio City, Benguet, Philippines<br>
+      Known as the Summer Capital of the Philippines
     </p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Discover Baguio City | Student Project Website</p>
+  <p>© 2026 Discover Baguio City | Student Project</p>
 </footer>
 
 <script>
